@@ -11,7 +11,7 @@ import Image from 'next/image'
  
    {/* Hero Section */}
       <section id='home' className="text-center relative overflow-hidden">
-        <p className="italic text-lg mb-4 animate-fade-in">Namaste🙏 I’m Shreya Asthana</p>
+        <p className="italic text-lg mb-4 animate-fade-in">Hey, I’m Shreya Asthana</p>
 
         <div className="relative inline-block">
           <h1 className="text-[3.5rem] sm:text-[6rem] font-extrabold tracking-tight leading-none animate-slide-up">
