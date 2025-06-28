@@ -24,7 +24,7 @@ const Work = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-40 ">
             {[
               { img: '/grootz.png', label: 'Grootz Website', url: 'https://www.behance.net/gallery/223936049/Educational-Website-UI-design' },
-              { img: '/juicy.png', label: 'Juicy Mobile app', url: 'https://www.behance.net/gallery/215555683/Juice-App-UI-Design-Prototype' },
+              { img: '/mobile app.png', label: 'Juicy Mobile app', url: 'https://www.behance.net/gallery/215555683/Juice-App-UI-Design-Prototype' },
               { img: '/pizza.png', label: 'Pizza Game', url: 'https://www.behance.net/gallery/224842979/Pizza-Game-Prototype-design-%28UIUX%29' },
               { img: '/branding.png', label: 'Branding Products', url: 'https://www.behance.net/gallery/223938547/Hackathon-Designs-Bannerswagslogo-%28HP-theme%29Figma' },
             ].map((item, idx) => (
