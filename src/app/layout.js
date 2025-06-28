@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { IconBase } from "react-icons";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,9 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portfolio-Shreya Asthana",
-icons: {
-    icon: '/favicon.png',
+  title: "Portfolio - Shreya Asthana",
+  icons: {
+    icon: "/favicon.png",
   },
 };
 
@@ -23,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>
