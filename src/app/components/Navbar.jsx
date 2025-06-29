@@ -68,11 +68,11 @@ const ResumeButton = () => (
 const NavLinks = ({ onClick }) => (
   <div className="flex flex-col md:flex-row md:space-x-6 items-center gap-2 md:gap-0">
     <Link href="#home" className="hover:underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>Home</Link>
-    <Link href="#visual-section" className="hover:-underline hover:decoration-pink-500 px-2 py-2" onClick={onClick}>About</Link>
-    <Link href="#projects" className="hover:-underline hover:decoration-pink-500 px-2 py-2" onClick={onClick}>Designing</Link>
-    <Link href="#webdev" className="hover:-underline hover:decoration-pink-500 px-2 py-2" onClick={onClick}>Web Dev</Link>
-    <Link href="#skills" className="hover:-underline hover:decoration-pink-500 px-2 py-2" onClick={onClick}>Skills</Link>
-    <Link href="#contact" className="hover:-underline hover:decoration-pink-500 px-2 py-2" onClick={onClick}>Contact</Link>
+    <Link href="#visual-section" className="hover:-underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>About</Link>
+    <Link href="#projects" className="hover:-underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>Designing</Link>
+    <Link href="#webdev" className="hover:-underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>Web Dev</Link>
+    <Link href="#skills" className="hover:-underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>Skills</Link>
+    <Link href="#contact" className="hover:-underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>Contact</Link>
   </div>
 );
 
