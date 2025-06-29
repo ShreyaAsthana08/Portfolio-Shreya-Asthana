@@ -9,7 +9,7 @@ export const Navbar = () => {
   const handleLinkClick = () => setIsOpen(false);
 
   return (
-   <nav className="bg-black text-gray-300 px-4 py-4 shadow-md w-full">
+    <nav className="fixed top-0 left-0 z-50 bg-black/60 text-gray-300 px-4 py-4 shadow-md w-full max-w-full">
       <div className="flex justify-between items-center max-w-6xl mx-auto">
         {/* Logo */}
         <Link href="#home" className="text-lg font-bold tracking-wide">
@@ -67,12 +67,12 @@ const ResumeButton = () => (
 // Navigation Links
 const NavLinks = ({ onClick }) => (
   <div className="flex flex-col md:flex-row md:space-x-6 items-center gap-2 md:gap-0">
-    <Link href="#home" className="hover:underline px-4 py-2" onClick={onClick}>Home</Link>
-    <Link href="#visual-section" className="hover:underline px-4 py-2" onClick={onClick}>About</Link>
-    <Link href="#projects" className="hover:underline px-4 py-2" onClick={onClick}>Designing</Link>
-    <Link href="#webdev" className="hover:underline px-4 py-2" onClick={onClick}>Web Dev</Link>
-    <Link href="#skills" className="hover:underline px-4 py-2" onClick={onClick}>Skills</Link>
-    <Link href="#contact" className="hover:underline px-4 py-2" onClick={onClick}>Contact</Link>
+    <Link href="#home" className="hover:underline px-2 py-2" onClick={onClick}>Home</Link>
+    <Link href="#visual-section" className="hover:underline px-2 py-2" onClick={onClick}>About</Link>
+    <Link href="#projects" className="hover:underline px-2 py-2" onClick={onClick}>Designing</Link>
+    <Link href="#webdev" className="hover:underline px-2 py-2" onClick={onClick}>Web Dev</Link>
+    <Link href="#skills" className="hover:underline px-2 py-2" onClick={onClick}>Skills</Link>
+    <Link href="#contact" className="hover:underline px-2 py-2" onClick={onClick}>Contact</Link>
   </div>
 );
 
