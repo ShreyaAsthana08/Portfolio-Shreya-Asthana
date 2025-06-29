@@ -21,8 +21,10 @@ const Work = () => {
 
           {/* Subtitle */}
           <p className="text-base sm:text-xl md:text-2xl mb-8 text-left text-gray-300">
-            Web & Mobile / UI & UX / Branding / Front-End Development
+            Web & Mobile / UI & UX / Branding / Front-End Development / Full-Stack Development
           </p>
+          <br />
+          <br />
 
           {/* Work Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-16 md:gap-20">

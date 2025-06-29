@@ -23,8 +23,8 @@ const About = () => {
       {/* Text Section */}
       <div className="max-w-xl text-left animate-fade-in">
         <p className="text-2xl sm:text-3xl leading-relaxed">
-          I create <span className="text-red-500 font-semibold">visually striking</span> and user-centered designs
-          that blend creativity with functionality.
+           <span className="text-red-400 font-semibold">I design and build </span> user-first digital experiences 
+           that are visually impactful and technically sound — where creativity meets clean code.
         </p>
       </div>
 
