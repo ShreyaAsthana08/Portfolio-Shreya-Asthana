@@ -54,26 +54,31 @@ export const Navbar = () => {
 
 // Download Resume Button
 const ResumeButton = () => (
-  <a
-    href="https://drive.google.com/file/d/1k1-PCVhwQR-gOxwzUCT5gPb6ImMmZcQ4/view?usp=sharing"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white text-black px-4 py-2 rounded-lg font-medium hover:bg-gray-200 transition duration-300 text-sm block mt-2 md:mt-0"
-  >
+ <a
+  href="https://drive.google.com/file/d/1k1-PCVhwQR-gOxwzUCT5gPb6ImMmZcQ4/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="relative inline-block px-1 py-1 rounded-lg group mt-2 md:mt-0"
+>
+  <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500 via-green-500 to-red-500 transition-all duration-300 opacity-0 group-hover:opacity-100"></span>
+  <span className="relative block px-4 py-2 rounded-lg bg-white text-black font-medium text-sm group-hover:bg-transparent group-hover:text-white transition-all duration-300 border border-transparent group-hover:border-white">
     Download Resume
-  </a>
+  </span>
+</a>
+
 );
 
 // Navigation Links
 const NavLinks = ({ onClick }) => (
   <div className="flex flex-col md:flex-row md:space-x-6 items-center gap-2 md:gap-0">
-    <Link href="#home" className="hover:underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>Home</Link>
-    <Link href="#visual-section" className="hover:-underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>About</Link>
-    <Link href="#projects" className="hover:-underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>Designing</Link>
-    <Link href="#webdev" className="hover:-underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>Web Dev</Link>
-    <Link href="#skills" className="hover:-underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>Skills</Link>
-    <Link href="#contact" className="hover:-underline hover:decoration-pink-500 decoration-2 px-2 py-2" onClick={onClick}>Contact</Link>
+    <Link href="#home" className="hover:underline decoration-red-400 underline-offset-4 px-2 py-2" onClick={onClick}>Home</Link>
+    <Link href="#visual-section" className="hover:underline decoration-red-400 underline-offset-4 px-2 py-2" onClick={onClick}>About</Link>
+    <Link href="#projects" className="hover:underline decoration-red-400 underline-offset-4 px-2 py-2" onClick={onClick}>Designing</Link>
+    <Link href="#webdev" className="hover:underline decoration-red-400 underline-offset-4 px-2 py-2" onClick={onClick}>Web Dev</Link>
+    <Link href="#skills" className="hover:underline decoration-red-400 underline-offset-4 px-2 py-2" onClick={onClick}>Skills</Link>
+    <Link href="#contact" className="hover:underline decoration-red-400 underline-offset-4 px-2 py-2" onClick={onClick}>Contact</Link>
   </div>
 );
+
 
 export default Navbar;
