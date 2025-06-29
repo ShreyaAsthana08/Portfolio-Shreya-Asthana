@@ -30,49 +30,66 @@ const About = () => {
 
       {/* Image Stack */}
       <div className="relative w-full lg:w-1/2 h-auto max-w-[500px] flex lg:block justify-center items-center">
-        {/* For small screens: stack images */}
+        {/* Mobile View: Stack Images */}
         <div className="flex flex-col gap-4 lg:hidden">
-          <Image src="/img1.png" alt="Project 1" width={250} height={300} className="rounded-xl shadow-xl mx-auto" />
-          <Image src="/img2.png" alt="Project 2" width={250} height={300} className="rounded-xl shadow-xl mx-auto" />
-          <Image src="/img3.png" alt="Project 3" width={250} height={300} className="rounded-xl shadow-xl mx-auto" />
+          <Image
+            src="/img1.png"
+            alt="Project 1"
+            width={250}
+            height={300}
+            className="rounded-xl shadow-xl mx-auto w-[85%] h-auto"
+          />
+          <Image
+            src="/img2.png"
+            alt="Project 2"
+            width={250}
+            height={300}
+            className="rounded-xl shadow-xl mx-auto w-[85%] h-auto"
+          />
+          <Image
+            src="/img3.png"
+            alt="Project 3"
+            width={250}
+            height={300}
+            className="rounded-xl shadow-xl mx-auto w-[85%] h-auto"
+          />
         </div>
 
-        {/* For large screens: animated overlap */}
+        {/* Desktop View: Animated Overlap */}
         <div className="hidden lg:block relative h-[500px] w-full">
-  {/* Center Image */}
-  <Image
-    src="/img1.png"
-    alt="Project 1"
-    width={200}
-    height={300}
-    className={`absolute top-0 left-1/2 -translate-x-1/2 rounded-xl shadow-xl transition-all duration-700 ease-out 
-      ${animateImages ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-    style={{ zIndex: 10 }}
-  />
+          {/* Center Image */}
+          <Image
+            src="/img1.png"
+            alt="Project 1"
+            width={200}
+            height={300}
+            className={`absolute top-0 left-1/2 -translate-x-1/2 rounded-xl shadow-xl transition-all duration-700 ease-out 
+              ${animateImages ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            style={{ zIndex: 10 }}
+          />
 
-  {/* Left Image */}
-  <Image
-    src="/img2.png"
-    alt="Project 2"
-    width={250}
-    height={300}
-    className={`absolute top-16 left-[10%] rounded-xl shadow-xl transition-all duration-700 ease-out delay-200
-      ${animateImages ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-    style={{ zIndex: 5 }}
-  />
+          {/* Left Image */}
+          <Image
+            src="/img2.png"
+            alt="Project 2"
+            width={250}
+            height={300}
+            className={`absolute top-16 left-[10%] rounded-xl shadow-xl transition-all duration-700 ease-out delay-200
+              ${animateImages ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            style={{ zIndex: 5 }}
+          />
 
-  {/* Right Image */}
-  <Image
-    src="/img3.png"
-    alt="Project 3"
-    width={250}
-    height={300}
-    className={`absolute top-20 right-[10%] rounded-xl shadow-xl transition-all duration-700 ease-out delay-400
-      ${animateImages ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-    style={{ zIndex: 1 }}
-  />
-</div>
-
+          {/* Right Image */}
+          <Image
+            src="/img3.png"
+            alt="Project 3"
+            width={250}
+            height={300}
+            className={`absolute top-20 right-[10%] rounded-xl shadow-xl transition-all duration-700 ease-out delay-400
+              ${animateImages ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            style={{ zIndex: 1 }}
+          />
+        </div>
       </div>
 
       {/* Fade animation */}

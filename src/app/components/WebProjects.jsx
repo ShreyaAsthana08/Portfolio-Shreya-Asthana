@@ -68,7 +68,7 @@ export default function WebDevProjects() {
               {/* Image */}
               <motion.div
                 className="w-full sm:w-1/2 rounded-xl overflow-hidden shadow-xl border border-zinc-700"
-                whileHover={{ scale: 1.02, rotate: idx % 2 === 0 ? -1 : 1 }}
+                whileHover={{ scale: 1.03, rotate: idx % 2 === 0 ? -1 : 1 }}
                 transition={{ type: 'spring', stiffness: 200 }}
               >
                 <Image
@@ -83,7 +83,7 @@ export default function WebDevProjects() {
               {/* Link Button */}
               <motion.div
                 className="w-full sm:w-1/2 flex justify-center sm:justify-start"
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.07 }}
                 transition={{ type: 'spring', stiffness: 300 }}
               >
                 <Link

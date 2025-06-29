@@ -25,7 +25,7 @@ export const Hero = () => {
           <h1 className="text-[2.5rem] sm:text-[6rem] font-extrabold tracking-tight leading-none animate-fade-in">
             CREATIVE
           </h1>
-          <p className="text-[1.5rem] sm:text-[2.5rem] italic absolute left-2 sm:left-[-6rem] top-[4rem] sm:top-[5rem] animate-fade-in">
+          <p className="text-[1.5rem] sm:text-[2.5rem] italic absolute left-2 sm:left-[-6rem] top-[5rem] sm:top-[5rem] animate-fade-in">
             visual
           </p>
           <h2 className="text-[2.5rem] sm:text-[6rem] font-extrabold tracking-tight leading-none animate-fade-in">
@@ -33,25 +33,36 @@ export const Hero = () => {
           </h2>
 
           {/* Tags (Position Adjusted) */}
-          <div className="absolute left-2 sm:left-[-6rem] top-[7rem] sm:top-[9rem] rotate-[-15deg] animate-bounce">
-            <span className="bg-red-600 text-white px-4 py-1 rounded-full shadow-xl text-sm italic">UI/UX Design</span>
-          </div>
-          <div className="absolute right-2 sm:right-[-6rem] top-[3rem] sm:top-[5rem] rotate-[15deg] animate-bounce">
-            <span className="bg-green-500 text-white px-4 py-1 rounded-full shadow-xl text-sm italic">Branding</span>
-          </div>
-          <div className="absolute left-6 sm:left-[6rem] top-[12rem] sm:top-[14rem] rotate-[10deg] animate-bounce">
-            <span className="bg-blue-600 text-white px-4 py-1 rounded-full shadow-xl text-sm italic">Web dev</span>
-          </div>
+          {/* 🔴 UI/UX Design Tag */}
+<div className="absolute left-2 sm:left-[-6rem] top-[7.5rem] sm:top-[9rem] rotate-[-15deg] animate-bounce z-20">
+  <span className="bg-red-600 text-white px-2 py-0.5 sm:px-4 sm:py-1 rounded-full shadow-xl text-xs sm:text-sm italic">
+    UI/UX Design
+  </span>
+</div>
 
-          {/* Profile Image */}
+{/* 🟢 Branding Tag */}
+<div className="absolute right-2 sm:right-[-6rem] top-[3rem] sm:top-[5rem] rotate-[15deg] animate-bounce z-20">
+  <span className="bg-green-500 text-white px-2 py-0.5 sm:px-4 sm:py-1 rounded-full shadow-xl text-xs sm:text-sm italic">
+    Branding
+  </span>
+</div>
+
+{/* 🔵 Web Dev Tag */}
+<div className="absolute left-2 sm:left-[6rem] top-[16rem] sm:top-[14rem] rotate-[10deg] animate-bounce z-40">
+  <span className="bg-blue-600 text-white px-2 py-0.5 sm:px-4 sm:py-1 rounded-full shadow-xl text-xs sm:text-sm italic">
+    Web dev
+  </span>
+</div>
+
+           {/* Profile Image - resized on small screens */}
           <div className="mt-10 animate-fade-in">
-           <Image
-  src="/my puc.png"
-  alt="Shreya Asthana"
-  width={300}
-  height={240}
-  className="rounded-full mx-auto grayscale max-w-[80vw] sm:max-w-[300px]"
-/>
+            <Image
+              src="/my puc.png"
+              alt="Shreya Asthana"
+              width={200}
+              height={200}
+              className="rounded-full mx-auto grayscale w-[120px] sm:w-[300px] h-auto"
+            />
           </div>
         </div>
       </section>
