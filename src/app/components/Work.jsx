@@ -21,7 +21,7 @@ const Work = () => {
 
           {/* Subtitle */}
           <p className="text-base sm:text-xl md:text-2xl mb-8 text-left text-gray-300">
-            Web & Mobile / UI & UX / Branding / Front-End Development / Full-Stack Development
+            Web & App Design / UI & UX / Branding / Product Design / Logo Design / Front-End Development
           </p>
           <br />
           <br />
@@ -29,6 +29,8 @@ const Work = () => {
           {/* Work Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-16 md:gap-20">
             {[
+              { img: '/case study.png', label: 'Case Study: Food delivery app', url: 'https://www.behance.net/gallery/241296329/Case-Study-Snackify-Food-delivery-app' },
+               { img: '/graphics.png', label: 'Graphic Designs', url: 'https://www.behance.net/gallery/234766101/Summer-is-here-Creative-Poster-%28Blinkit%29' },
               { img: '/grootz.png', label: 'Grootz Website', url: 'https://www.behance.net/gallery/223936049/Educational-Website-UI-design' },
               { img: '/mobile app.png', label: 'Juicy Mobile app', url: 'https://www.behance.net/gallery/215555683/Juice-App-UI-Design-Prototype' },
               { img: '/pizza.png', label: 'Pizza Game', url: 'https://www.behance.net/gallery/224842979/Pizza-Game-Prototype-design-%28UIUX%29' },

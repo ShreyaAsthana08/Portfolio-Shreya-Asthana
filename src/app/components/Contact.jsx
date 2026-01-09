@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaEnvelope,
   FaPhone,
+  FaYoutube,
 } from 'react-icons/fa6';
 
 export default function ContactSection() {
@@ -65,9 +66,7 @@ export default function ContactSection() {
         <div className="flex items-center gap-2">
           <FaEnvelope /> work.shreya123@gmail.com
         </div>
-        <div className="flex items-center gap-2">
-          <FaPhone /> +91 9818570119
-        </div>
+       
       </motion.div>
 
       {/* Social Icons */}
@@ -83,7 +82,8 @@ export default function ContactSection() {
           { icon: <FaDribbble />, href: 'https://dribbble.com/shreyaa08' },
           { icon: <FaBehance />, href: 'https://www.behance.net/shreyaasthana08' },
           { icon: <FaXTwitter />, href: 'https://x.com/a_shreya08' },
-          { icon: <FaInstagram />, href: 'https://www.instagram.com/bloomingcolors08/' },
+          { icon: <FaInstagram />, href: 'https://www.instagram.com/her.codecanvas/' },
+          { icon: <FaYoutube />, href: 'https://www.youtube.com/@hercodecanvas' },
         ].map((item, index) => (
           <motion.a
             key={index}

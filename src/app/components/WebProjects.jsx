@@ -5,16 +5,22 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const webProjects = [
+   {
+    title: 'Ladder1 AI Website',
+    url: 'https://ladder1.ai/',
+    img: '/ladder1.png'
+  },
+   {
+    title: 'NCR School Website',
+    url: 'https://ncrcollegetdledu.org.in/',
+    img: '/ncrschool.png'
+  },
   {
     title: 'Printo E-commerce',
     url: 'https://my-prints-six.vercel.app/',
     img: '/printo.png'
   },
-  {
-    title: 'NCR School Website',
-    url: 'https://ncrcollegetundla.vercel.app/',
-    img: '/ncrschool.png'
-  },
+ 
   {
     title: 'Foodiz Website',
     url: 'https://foodiz-git-main-shreyas-projects-bf338e50.vercel.app',
@@ -35,7 +41,7 @@ export default function WebDevProjects() {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Heading */}
         <motion.div
-          className="relative mb-10 text-center sm:text-left"
+          className="relative mb-20 text-center sm:text-left"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -67,7 +73,7 @@ export default function WebDevProjects() {
             >
               {/* Image */}
               <motion.div
-                className="w-full sm:w-1/2 rounded-xl overflow-hidden shadow-xl border border-zinc-700"
+                className="w-full sm:w-1/2 rounded-xl overflow-hidden shadow-xl border border-zinc-200"
                 whileHover={{ scale: 1.03, rotate: idx % 2 === 0 ? -1 : 1 }}
                 transition={{ type: 'spring', stiffness: 200 }}
               >

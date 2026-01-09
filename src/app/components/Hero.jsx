@@ -70,11 +70,11 @@ export const Hero = () => {
           {/* Profile Image */}
           <div className="mt-10 animate-fade-in">
             <Image
-              src="/my puc.png"
+              src="/my picc.png"
               alt="Shreya Asthana"
-              width={200}
-              height={200}
-              className="rounded-full mx-auto grayscale w-[120px] sm:w-[300px] h-auto"
+              width={500}
+              height={500}
+              className="rounded-full mx-auto grayscale w-[500px] sm:w-[500px] h-auto"
             />
           </div>
         </div>

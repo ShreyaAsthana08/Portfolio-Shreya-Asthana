@@ -55,7 +55,7 @@ export const Navbar = () => {
 // Download Resume Button
 const ResumeButton = () => (
  <a
-  href="https://drive.google.com/file/d/1k1-PCVhwQR-gOxwzUCT5gPb6ImMmZcQ4/view?usp=sharing"
+  href="https://drive.google.com/file/d/1D9JOFHrpPmcGtehDI6lK2BNPm0_Wl4JX/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="relative inline-block px-1 py-1 rounded-lg group mt-2 md:mt-0"
